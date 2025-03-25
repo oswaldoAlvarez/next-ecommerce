@@ -1,6 +1,6 @@
-import { SimplePokemon } from "@/app/pokemons/interfaces/simple-pokemon";
 import Image from "next/image";
 import Link from "next/link";
+import { SimplePokemon } from "@/components/pokemons/interfaces/simple-pokemon";
 import { IoHeartOutline } from "react-icons/io5";
 
 interface IPokemonCard {
@@ -17,8 +17,8 @@ export const PokemonCard = ({ pokemon }: IPokemonCard) => {
           <Image
             key={pokemon.id}
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`}
-            width={100}
-            height={100}
+            width={200}
+            height={200}
             alt={pokemon.name}
             priority={false}
           />
@@ -27,7 +27,7 @@ export const PokemonCard = ({ pokemon }: IPokemonCard) => {
           </p>
           <div className="mt-5">
             <Link
-              href={`/pokemon/${id}`}
+              href={`/dashboard/pokemon/${id}`}
               className="border rounded-full py-2 px-4 text-xs font-semibold text-gray-100"
             >
               Más información

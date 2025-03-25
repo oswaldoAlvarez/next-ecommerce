@@ -46,21 +46,19 @@ export const Sidebar = () => {
         </p>
       </div>
       <div id="profile" className="px-6 py-10">
-        <p className="text-slate-500">Welcome back,</p>
-        <a href="#" className="inline-flex space-x-2 items-center">
-          <span>
-            <Image
-              className="rounded-full w-8 h-8"
-              src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c"
-              alt="User avatar"
-              width={50}
-              height={50}
-            />
-          </span>
+        <p className="text-slate-500">Welcome back</p>
+        <div className="inline-flex space-x-2 items-center mt-5">
+          <Image
+            className="rounded-full w-8 h-8"
+            src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c"
+            alt="User avatar"
+            width={50}
+            height={50}
+          />
           <span className="text-sm md:text-base font-bold">
             Oswaldo Alvarez
           </span>
-        </a>
+        </div>
       </div>
 
       <div id="nav" className="w-full px-6">

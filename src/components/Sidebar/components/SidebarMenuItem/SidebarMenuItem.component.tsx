@@ -1,8 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { JSX } from "react";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 
 interface ISideBarMenuItem {
   path: string;
@@ -18,8 +18,6 @@ export const SidebarMenuItem = ({
   subTitle,
 }: ISideBarMenuItem) => {
   const pathname = usePathname();
-
-  console.log("Este es el pathname: ", pathname);
 
   return (
     <Link
